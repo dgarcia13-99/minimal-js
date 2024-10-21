@@ -1,3 +1,5 @@
+<head><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 <h1>Cities</h1>
 
 <ul id="cities_list">
@@ -9,9 +11,92 @@
   <li id="sfo" class="west">San Francisco</li>
 </ul>
 
-<script>
-  // Write your JS here.
-  // Open the JS console and refresh the page to see the output.
+<div id="bye">Click me</div>
 
-  
+<script>
+console.log("howdy!");
+console.log(`Your lucky number is ${7 * 6}`)
+
+let name = "Alice";
+console.log(`howdy ${name}`);
+
+name = "Bob";
+console.log(`hi ${name}`);
+
+const pi = 3.14;
+
+let aReallyLongVariableName = 42;
+console.log(aReallyLongVariableName);
+
+function greet(name) {
+  console.log(`howdy, ${name}!`);
+}
+greet("Alice");
+
+let x = 5;
+x++;
+x++
+console.log(x);
+
+for (let i = 2; i < 6; i++){
+  console.log(i*i);
+}
+
+let fruits = ["apples", "oranges", "bananas"];
+console.log(fruits[1]);
+console.log(fruits.length);
+
+let fruitss = ["apples", "oranges", "cherries"];
+
+fruitss.forEach(function(fruit) {
+  console.log(`I love ${fruit}`);
+});
+
+//decimals between 0 and 1
+let win_probability = Math.random();
+console.log(win_probability);
+
+//random integer: 'floor' rounds DOWN (exclusive)
+let dice_roll = Math.floor(Math.random() * 6);
+console.log(dice_roll);
+
+const moves = ["rock", "paper", "scissors"];
+
+let random_index = Math.floor(Math.random() * 3);
+
+let computer_move = moves[random_index];
+
+console.log(`The computer played ${computer_move}.`);
+
+// NOTICE THE TRIPLE EQUAL SIGNS FOR COMPARISONS!!!!
+
+if (computer_move === "rock"){
+  console.log("You tied.");
+}
+else if (computer_move === "paper"){
+  console.log("You lost.");
+}
+else {
+  console.log("You won.");
+}
+
+//FIZZBUZZ
+
+for (i = 1; i < 101; i++){
+  if(i % 3 === 0 && i % 5 === 0){
+    console.log("fizzbuzz");
+  }
+  else if (i % 3 === 0){
+    console.log("fizz");
+  }
+  else if (i % 5 === 0){
+    console.log("buzz");
+  }
+  else{
+    console.log(i);
+  }
+}
+
+
+
 </script>
